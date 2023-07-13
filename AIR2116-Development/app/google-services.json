@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1073609483359",
+    "firebase_url": "https://romic-promet-80d59-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "romic-promet-80d59",
+    "storage_bucket": "romic-promet-80d59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073609483359:android:973ea7d6a53d684206a7ea",
+        "android_client_info": {
+          "package_name": "hr.foi.air.air2116"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073609483359-q73rr87co30m65msuds0p7h8mf8l5d3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVhn2PdIMkmTtGZugFiHoHYjJjVB_26-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073609483359-q73rr87co30m65msuds0p7h8mf8l5d3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

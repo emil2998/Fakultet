@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.AktivniPoslovi"
+    android:background="@color/rp_blue_very_light">
+    <include layout="@layout/main_toolbar"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="20dp"
+        android:id="@+id/recViewAktivniPoslovi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/red_aktivni_poslovi">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

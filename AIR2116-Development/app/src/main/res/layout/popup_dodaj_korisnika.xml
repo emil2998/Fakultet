@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:padding="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtLabelIme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ime:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtImeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLabelIme" />
+
+        <TextView
+            android:id="@+id/txtLabelPrezime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezime:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtImeInput" />
+
+        <EditText
+            android:id="@+id/txtPrezimeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLabelPrezime" />
+
+        <TextView
+            android:id="@+id/txtLabelUloga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uloga:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPrezimeInput"
+            android:layout_marginTop="15dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerUloga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/txtLabelUloga"
+            app:layout_constraintLeft_toRightOf="@id/txtLabelUloga" />
+
+        <TextView
+            android:id="@+id/txtLabelKorisnickoIme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Korisničko ime:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerUloga"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtKorisnickoImeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLabelKorisnickoIme" />
+
+        <TextView
+            android:id="@+id/txtLabelLozinka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lozinka:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtKorisnickoImeInput" />
+
+        <EditText
+            android:id="@+id/txtLozinkaInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLabelLozinka" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGenerirajLozinku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generiraj lozinku"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLozinkaInput" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOdustani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odustani"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGenerirajLozinku"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_button_popup_dodaj_korisnika"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPotvrdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Potvrdi"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGenerirajLozinku"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_button_popup_dodaj_korisnika"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

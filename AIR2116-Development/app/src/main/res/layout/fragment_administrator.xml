@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnZaposlenici"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Zaposlenici"
+        android:backgroundTint="@color/rp_blue"/>
+
+    <Button
+        android:id="@+id/btnVozilaIPrikolice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Vozila i prikolice"
+        android:backgroundTint="@color/rp_blue"/>
+
+    <Button
+        android:id="@+id/btnDogovoreniPoslovi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Dogovoreni poslovi"
+        android:backgroundTint="@color/rp_blue"/>
+
+    <Button
+        android:id="@+id/btnLokacijaVozila"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Lokacija vozila"
+        android:backgroundTint="@color/rp_blue"/>
+
+    <Button
+        android:id="@+id/btnProfil"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Profil"
+        android:backgroundTint="@color/rp_blue"/>
+
+    <Button
+        android:id="@+id/btnOdjava"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Odjava"
+        android:backgroundTint="@color/rp_blue"/>
+
+</LinearLayout>

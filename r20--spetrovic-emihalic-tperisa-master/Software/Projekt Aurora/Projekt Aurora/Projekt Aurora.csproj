@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B359C5A6-FAC0-4855-BE63-60221C4AE7B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekt_Aurora</RootNamespace>
+    <AssemblyName>Projekt Aurora</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DinamickoGeneriranjeSjedala, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DinamickoGeneriranjeSjedala.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmPlacanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlacanje.Designer.cs">
+      <DependentUpon>FrmPlacanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Dvorana.cs" />
+    <Compile Include="DvoranaRepozitorij.cs" />
+    <Compile Include="Film.cs" />
+    <Compile Include="FilmRepozitorij.cs" />
+    <Compile Include="FrmGlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGlavnaForma.Designer.cs">
+      <DependentUpon>FrmGlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaza.Designer.cs">
+      <DependentUpon>FrmBaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecenzije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecenzije.Designer.cs">
+      <DependentUpon>FrmRecenzije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecenziraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecenziraj.Designer.cs">
+      <DependentUpon>FrmRecenziraj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRezerviranje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRezerviranje.Designer.cs">
+      <DependentUpon>FrmRezerviranje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpozorenje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpozorenje.Designer.cs">
+      <DependentUpon>FrmUpozorenje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Glumac.cs" />
+    <Compile Include="GlumacRepozitorij.cs" />
+    <Compile Include="Kalendar.cs" />
+    <Compile Include="Kino.cs" />
+    <Compile Include="KinoRepozitorij.cs" />
+    <Compile Include="KinoUlaznica.cs" />
+    <Compile Include="KinoUlazniceRepozitorij.cs" />
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="KorisnikRepozitorij.cs" />
+    <Compile Include="FrmRegistracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistracija.Designer.cs">
+      <DependentUpon>FrmRegistracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrijava.Designer.cs">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Projekcija.cs" />
+    <Compile Include="ProjekcijaRepozitorij.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvjeraKorisnickogUnosa.cs" />
+    <Compile Include="Raspored.cs" />
+    <Compile Include="RasporedRepozitorij.cs" />
+    <Compile Include="Recenzija.cs" />
+    <Compile Include="RecenzijaRepozitorij.cs" />
+    <Compile Include="UCBazaDodajDvoranu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajDvoranu.Designer.cs">
+      <DependentUpon>UCBazaDodajDvoranu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatistikaRepozitorij.cs" />
+    <Compile Include="UCStatistika.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStatistika.Designer.cs">
+      <DependentUpon>UCStatistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KalendarTransakcijaRepozitorij.cs" />
+    <Compile Include="UCKorisničkiProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCKorisničkiProfil.Designer.cs">
+      <DependentUpon>UCKorisničkiProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodajFilm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajFilm.Designer.cs">
+      <DependentUpon>UCBazaDodajFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodajGlumca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajGlumca.Designer.cs">
+      <DependentUpon>UCBazaDodajGlumca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodajKina.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajKina.Designer.cs">
+      <DependentUpon>UCBazaDodajKina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodajProjekciju.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajProjekciju.Designer.cs">
+      <DependentUpon>UCBazaDodajProjekciju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodajZanr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodajZanr.Designer.cs">
+      <DependentUpon>UCBazaDodajZanr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodjeliGlumca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodjeliGlumca.Designer.cs">
+      <DependentUpon>UCBazaDodjeliGlumca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaDodjeliZanr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaDodjeliZanr.Designer.cs">
+      <DependentUpon>UCBazaDodjeliZanr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniDvoranu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniDvoranu.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniDvoranu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniFilm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniFilm.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniGlumca.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniGlumca.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniGlumca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniKino.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniKino.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniKino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniProjekciju.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniProjekciju.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniProjekciju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniZanr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCBazaIzmijeniZanr.Designer.cs">
+      <DependentUpon>UCBazaIzmijeniZanr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPretraziFilmove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPretraziFilmove.Designer.cs">
+      <DependentUpon>UCPretraziFilmove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPretraziKinaIRasporede.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPretraziKinaIRasporede.Designer.cs">
+      <DependentUpon>UCPretraziKinaIRasporede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCRecenzija.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCRecenzija.Designer.cs">
+      <DependentUpon>UCRecenzija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCUpravljanjeBazom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCUpravljanjeBazom.Designer.cs">
+      <DependentUpon>UCUpravljanjeBazom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UkupnaStatistika.cs" />
+    <Compile Include="UlogiraniKorisnik.cs" />
+    <Compile Include="UCKorisnickiKalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCKorisnickiKalendar.Designer.cs">
+      <DependentUpon>UCKorisnickiKalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zanr.cs" />
+    <Compile Include="ZanrRepozitorij.cs" />
+    <EmbeddedResource Include="FrmGlavnaForma.resx">
+      <DependentUpon>FrmGlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaza.resx">
+      <DependentUpon>FrmBaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlacanje.resx">
+      <DependentUpon>FrmPlacanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecenzije.resx">
+      <DependentUpon>FrmRecenzije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecenziraj.resx">
+      <DependentUpon>FrmRecenziraj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistracija.resx">
+      <DependentUpon>FrmRegistracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrijava.resx">
+      <DependentUpon>FrmPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRezerviranje.resx">
+      <DependentUpon>FrmRezerviranje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpozorenje.resx">
+      <DependentUpon>FrmUpozorenje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCBazaDodajDvoranu.resx">
+      <DependentUpon>UCBazaDodajDvoranu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStatistika.resx">
+      <DependentUpon>UCStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodajFilm.resx">
+      <DependentUpon>UCBazaDodajFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodajGlumca.resx">
+      <DependentUpon>UCBazaDodajGlumca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodajKina.resx">
+      <DependentUpon>UCBazaDodajKina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodajProjekciju.resx">
+      <DependentUpon>UCBazaDodajProjekciju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodajZanr.resx">
+      <DependentUpon>UCBazaDodajZanr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodjeliGlumca.resx">
+      <DependentUpon>UCBazaDodjeliGlumca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaDodjeliZanr.resx">
+      <DependentUpon>UCBazaDodjeliZanr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniDvoranu.resx">
+      <DependentUpon>UCBazaIzmijeniDvoranu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniFilm.resx">
+      <DependentUpon>UCBazaIzmijeniFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniGlumca.resx">
+      <DependentUpon>UCBazaIzmijeniGlumca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniKino.resx">
+      <DependentUpon>UCBazaIzmijeniKino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniProjekciju.resx">
+      <DependentUpon>UCBazaIzmijeniProjekciju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCBazaIzmijeniZanr.resx">
+      <DependentUpon>UCBazaIzmijeniZanr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCKorisnickiKalendar.resx">
+      <DependentUpon>UCKorisnickiKalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCKorisničkiProfil.resx">
+      <DependentUpon>UCKorisničkiProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPretraziFilmove.resx">
+      <DependentUpon>UCPretraziFilmove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPretraziKinaIRasporede.resx">
+      <DependentUpon>UCPretraziKinaIRasporede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCRecenzija.resx">
+      <DependentUpon>UCRecenzija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCUpravljanjeBazom.resx">
+      <DependentUpon>UCUpravljanjeBazom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="bin\Debug\Projekt Aurora.exe.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aputurelogo_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VanjskeBiblioteke\VanjskeBiblioteke.csproj">
+      <Project>{e69f310d-5651-4162-ab04-0c755b37d6fb}</Project>
+      <Name>VanjskeBiblioteke</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Projekt Aurora.exe" />
+    <Content Include="bin\Debug\Projekt Aurora.pdb" />
+    <Content Include="bin\Debug\VanjskeBiblioteke.dll" />
+    <Content Include="bin\Debug\VanjskeBiblioteke.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

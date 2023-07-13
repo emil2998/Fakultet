@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kontejnerGlavniIzbornik"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rp_blue_very_light">
+
+
+    <LinearLayout
+        android:id="@+id/podaci"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/rp_blue">
+        <ImageView
+            android:id="@+id/profilna"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/ime"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="Ime"
+            android:textSize="20dp">
+        </TextView>
+        <TextView
+            android:id="@+id/prezime"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="-200dp"
+            android:text="Prezime"
+            android:textSize="20dp">
+        </TextView>
+        <TextView
+            android:id="@+id/uloga"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="-200dp"
+            android:text="Uloga"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/gumbi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/rp_blue_very_light">
+    </LinearLayout>
+</LinearLayout>
+
+

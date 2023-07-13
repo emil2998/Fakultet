@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/rp_blue_light"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/redniBroj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="20dp"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/rp_blue_light">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textUtovar"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/rp_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="utovar - Zagreb"/>
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/textKamionUtovar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kamion"/>
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/textPrikolicaUtovar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prikolica"/>
+    <Button
+        android:id="@+id/btnUtovar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obavljeno"
+        android:textSize="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/rp_blue_light">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textIstovar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="istovar- Zadar"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/rp_blue"/>
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/textKamionIstovar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kamion"/>
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/textPrikolicaIstovar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prikolica"/>
+        <Button
+            android:id="@+id/btnIstovar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obavljeno"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

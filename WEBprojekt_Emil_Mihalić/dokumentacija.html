@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+  <title>Dokumentacija</title>
+</head>
+<body>
+  <header>
+    <ul class="topnav">
+      <li><a href="index.php">Početna</a></li>
+      <li><a href="o_autoru.html">O Autoru</a></li>
+      <li><a href="dokumentacija.html">Dokumentacija</a></li>
+    </ul>
+  </header>
+
+  <main style="text-align: center;">
+    <h1>Dokumentacija projekta plesna škola</h1>
+
+    <div class="opis">
+      <h2>Opis projektnog zadatka</h2>
+      <p>
+        Sustav za upravljanje upisom plesa i polaganje ispita nakon uspješnog završetka plesne škole. Koji sadrži uloge Neregistrirani korisnik, Registrirani korisnik / Kandidat, Moderator / Mentor, Administrator.
+      </p>
+    </div>
+
+    <div class="opis">
+      <h2>Opis projektnog rješenja</h2>
+      <p>Projektno rješenje realiziralo je uloge do sljedećih razina:</p>
+      <h4>Neregistrirani korisnik / Gledatelj</h4>
+      <p>Uloga neregistriranog korisnika relizirana je djelomično u 2/3 točke. Točka koja nije uspješno implementirana je točka pregleda galerije videa sa ispita. 
+        Sve ostalo je implementirano skoro u potpunosti.
+      </p>
+      <h4>Registrirani korisnik / Kandidat</h4>
+      <p>Uloga registriranog korisnika relizirana je u 2/5 točki. Točke koje su realizirane su točke 
+        pregleda slobodnih mentora te pregleda odobrenih zahtjeva i plaćanja istih.
+      </p>
+      <h4>Moderator / Mentor</h4>
+      <p>Uloga moderatora relizirana je djelomično u 4/5 točki. Jedina točka koja nije realizirana je točka pregleda statistike plaćenih računa te na kreiranju
+          nema pregleda,ažuriranja i brisanja, ali je sve ostalo funkcionalno.
+          
+      </p>
+      <h4>Administrator</h4>
+      <p>Uloga administratora relizirana je djelomično u 2/3 točke. Jedina točka koja nije realizirana je točka pregleda zahtjeva za polaganjem ispita. Nisu 
+          dodane operacije pregled,ažuriranje,brisanje za sve tablice te zbog toga u prvoj točki nije moguće dodati više moderatora. 
+      </p>
+    </div>
+    
+    <div class="opis">
+      <h2>Opis završenosti projekta</h2>
+      <p>
+        Prema prethodno opisanim ulogama već je prikazano kolika je završenost projekta no s obzirom da osim funkcionalnosti uloga postoje i druge funkcionalnosti u projektu
+        moguće je reći da je projekt završen u okviru 35-40%. 
+      </p>
+    </div>
+
+    <div class="opis">
+      <h2>Vanjske skripte</h2>
+      <p>
+        Od vanjskih skripti korišten je jQuery, cookiebot (korišten za kreiranje kolačića za prihvaćanje uvjeta korištenja),reCaptcha i biblioteke baza.class.php i sesija.class.php.
+      </p>
+    </div>
+
+    <div class="opis">
+      <h2>Uočeni problemi u radu</h2>
+      <div>
+        <table>
+          <tr>
+            <th>Problem</th>
+            <th>Opis</th>
+          </tr>
+          <tr>
+            <td>Sesija.class.php i neki izbornici.</td>
+            <td>
+             Neki izbornici rade, ali vizualno izgleda kao da se nije promjenio odabir. Ponekad se ispisuju neke greške vezane uz datoteku sesija.class.php, ali one ne utječu na
+            funkcionalnost.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="baza">
+      <h2>Era model</h2>
+      <div>
+        <img style="max-width: 50%;" src="images/era_model.png" alt="">
+      </div>
+    </div>
+    <div class="baza">
+      <h2>Navigacijski dijagram Administratora</h2>
+      <div>
+        <img style="max-width: 50%;" src="images/Admin.png" alt="">
+      </div>
+    </div>
+    <div class="baza">
+      <h2>Navigacijski dijagram Moderatora</h2>
+      <div>
+        <img style="max-width: 50%;" src="images/Mentor.png" alt="">
+      </div>
+    </div>
+    <div class="baza">
+      <h2>Navigacijski dijagram Registriranog korisnika</h2>
+      <div>
+        <img style="max-width: 50%;" src="images/Registrirani.png" alt="">
+      </div>
+    </div>
+    <div class="baza">
+      <h2>Navigacijski dijagram Neregistriranog korisnika</h2>
+      <div>
+        <img style="max-width: 50%;" src="images/Neregistrirani.png" alt="">
+      </div>
+    </div>
+
+    <div class="datoteke">
+      <h2>Popis datoteka koristenih u projektu</h2>
+      <div>
+        <table>
+          <tr>
+            <th>Datoteka/skripta</th>
+            <th>Opis</th>
+          </tr>
+          <tr>
+            <td>head.php</td>
+            <td>
+              Datoteka koja se koristi na globalnoj razini te je uključena u gotovo sve php datoteke te u sebi nosi poveznicu s bazom, zaglavlje dokumenta,
+              navigaciju te poveznicu na sve skripte (dizajn, funckionalnosti (javascript)).
+            </td>
+          </tr>
+          <tr>
+            <td>foot.php</td>
+            <td>
+              Datoteka koja sadrži kraj dokumenta i zatvaranje veze na bazu.
+            </td>
+          </tr>
+          <tr>
+            <td>baza.class.php</td>
+            <td>
+              Datoteka koja sadrži poveznicu na bazu te sve funkcije koje se izvršavaju na bazi i koje se globalno koriste u cijelom projektu.
+            </td>
+          </tr>
+          <tr>
+            <td>index.php</td>
+            <td>
+              Početna stranica svake uloge je realizirana kroz ovu php datoteku. 
+            </td>
+          </tr>
+          <tr>
+            <td>o_autoru.html</td>
+            <td>
+              Stranica koja sadrži sve podatke o autoru ovog projekta.
+            </td>
+          </tr>
+          <tr>
+            <td>prijava.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost prijave, sadrži sve potrebne provjere kako bi se korisnik na pravi i uspješan način prijavio u sustav.
+            </td>
+          </tr>
+          <tr>
+            <td>registracija.php</td>
+            <td>
+              Ova datoteka realizira funkcionalnost registracije te sadrži sve provjere kako bi se korisnik uspješno registrirao.
+            </td>
+          </tr>
+          <tr>
+            <td>lozinka.php</td>
+            <td>
+              Datoteka koja služi za slanje zahtjeva za promjenom lozinke.
+            </td>
+          </tr>
+          <tr>
+            <td>aktivacija.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost aktivacije korisničkog računa nakon što se korisnik uspješno registrirao.
+            </td>
+          </tr>
+          <tr>
+            <td>korisnicki-racuni.php</td>
+            <td>
+              Administratorska datoteka koja služi za pregled, blokiranje, zaključavanje, odblokiravanje i otključavanje korisničkih računa.
+            </td>
+          </tr>
+          <tr>
+            <td>kreiranje-cjenika.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost kreiranje cjenika kod administratora.
+            </td>
+          </tr>
+          <tr>
+            <td>kreiranje-skola.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost kreiranje škola kod administratora.
+            </td>
+          </tr>
+          <tr>
+            <td>kreiranje-termina.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost kreiranje termina kod moderatora.
+            </td>
+          </tr>
+          <tr>
+            <td>kreiranje-zahtjeva.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost kreiranja zahtjeva kod registriranog korisnika.
+            </td>
+          </tr>
+          <tr>
+            <td>mentori-popis.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost pregleda mentora za neregistriranog korisnika.
+            </td>
+          </tr>
+          <tr>
+            <td>moji-podaci.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost unosa podataka za određenog mentora.
+            </td>
+          </tr>
+          <tr>
+            <td>popis-racuna.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost pregleda računa te potvrde da je račun plaćen za ulogu moderatora.
+            </td>
+          </tr>
+          <tr>
+            <td>popis-skola.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost pregleda popisa škola za sve korisnike.
+            </td>
+          </tr>
+          <tr>
+            <td>popis-zahtjeva.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost pregleda svih zahtjeva te prihvaćanje ili odbijanje zahtjeva za ulogu moderatora.
+            </td>
+          </tr>
+          <tr>
+            <td>pregled-dnevnika.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost pregleda dnevnika aktivnosti u sustavu za svakog korisnika sa mogućnosti filtriranja prema korisniku.
+          </tr>
+          <tr>
+            <td>promjena-status-racuna.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost promjene statusa računa (blokiran, odblokiran).
+            </td>
+          </tr>
+          <tr>
+            <td>provjera.php</td>
+            <td>
+              Datoteka koja realizira funkcionalnost provjere da li određeni korisnik postoji u bazi ili ne. Koristi se na prijavi i registraciji uz pomoć AJAX-a.
+          </tr>
+          <tr>
+            <td>main.js</td>
+            <td>
+              Datoteka koja realizira sve funkcionalnosti provjere na klijentskoj strani te asistencije potrebne php datotekama prilikom filtriranja podataka.
+          </tr>
+          <tr>
+            <td>main.css</td>
+            <td>
+              Datoteka koja sadrži sve stilske definicije koje se odražavaju na implementaciji projekta.
+          </tr>
+          <tr>
+            <td>sesija.class.php</td>
+            <td>
+              Datoteka koja služi za kreiranje i brisanje sesije.
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+

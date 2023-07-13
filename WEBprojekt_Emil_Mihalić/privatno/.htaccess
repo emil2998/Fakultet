@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /var/www/webdip.barka.foi.hr/2019_projekti/WebDiP2019x084/privatno/user.txt
+AuthName "WebDiP Apache Login"
+Require valid-user

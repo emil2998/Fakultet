@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/header1"
+        android:title="Promijeni lozinku" />
+    <item
+        android:id="@+id/header2"
+        android:title="Promijeni email" />
+    <item
+        android:id="@+id/header3"
+        android:title="Promijeni PIN" />
+    <item
+        android:id="@+id/header4"
+        android:title="Promijeni ime i prezime" />
+    <item
+        android:id="@+id/header5"
+        android:title="Promijeni sliku" />
+    <item
+        android:id="@+id/header6"
+        android:title="Promijeni broj" />
+
+
+</menu>

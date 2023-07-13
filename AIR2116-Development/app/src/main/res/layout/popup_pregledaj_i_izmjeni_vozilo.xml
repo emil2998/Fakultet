@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:padding="10dp">
+
+<ScrollView
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgREADProfilnaVozilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            app:layout_constraintHeight_max="100dp"
+            app:layout_constraintWidth_max="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnREADObrisiVozilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:text="Obriši"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPromijeniSlikuVozila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promijeni sliku"
+            app:layout_constraintTop_toBottomOf="@+id/imgREADProfilnaVozilo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtREADLabelNazivModela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Naziv modela:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPromijeniSlikuVozila"/>
+
+        <EditText
+            android:id="@+id/txtREADNazivModelaInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADLabelNazivModela" />
+
+        <TextView
+            android:id="@+id/txtREADLabelGodinaProizvodnje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Godina proizvodnje:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADNazivModelaInput" />
+
+        <EditText
+            android:id="@+id/txtREADGodinaProizvodnjeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADLabelGodinaProizvodnje" />
+
+        <TextView
+            android:id="@+id/txtREADLabelRegistracija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registarska oznaka:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADGodinaProizvodnjeInput" />
+
+        <EditText
+            android:id="@+id/txtREADRegistracijaInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtREADLabelRegistracija" />
+
+        <TextView
+            android:id="@+id/txtREADLabelRegistriranDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Registriran do:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADRegistracijaInput" />
+
+        <EditText
+            android:id="@+id/txtREADRegistriranDoInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADLabelRegistriranDo" />
+
+        <TextView
+            android:id="@+id/txtREADLabelNosivost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nosivost:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADRegistriranDoInput" />
+
+        <EditText
+            android:id="@+id/txtREADNosivostInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADLabelNosivost" />
+
+        <TextView
+            android:id="@+id/txtREADLabelSnaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snaga:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADNosivostInput" />
+
+        <EditText
+            android:id="@+id/txtREADSnagaInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtREADLabelSnaga" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnREADOdustaniVozilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_button_popup_dodaj_korisnika"
+            android:text="Odustani"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtREADSnagaInput"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnREADIzmjeniVozilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/background_button_popup_dodaj_korisnika"
+            android:text="Izmjeni"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtREADSnagaInput" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

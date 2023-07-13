@@ -1,0 +1,132 @@
+body {
+  background-color: gray;
+  margin: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightslategray;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+ul.topnav li a.active {
+  background-color: lightskyblue;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+.registracija {
+  margin-top: 10px;
+}
+
+.registracija .container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  width: 500px;
+  padding: 10px;
+}
+
+.registracija .container input {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+
+.registracija .container.signin {
+  background: none;
+}
+
+.error {
+  display: block;
+  margin: 10px auto;
+  width: max-content;
+  color: white;
+}
+
+.button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+table {
+  max-width: 800px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.filter {
+  text-align: center;
+  padding: 20px;
+}

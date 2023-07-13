@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:id="@+id/linLayoutInfoVozaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/rp_blue_very_light">
+
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#979797"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/rp_blue_very_light">
+            <TextView
+                android:id="@+id/PoduzeceInfo"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:text="PoduzeceInfo"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/KamionInfo"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:text="PoduzeceInfo"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/PrikolicaInfo"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:gravity="center"
+                android:text="PoduzeceInfo"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/rp_blue_very_light">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtAdrsUtovarUnosDodjela"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:text="Ul. Matije Gupca 231, 33000, Virovitica"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:gravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/rp_blue"
+                    android:background="@drawable/white_box"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_dots"
+                    android:rotation="90"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:id="@+id/txtAdrsIstovarUnosDodjela"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:text="Ul. Matije Gupca 231, 33000, Virovitica"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:gravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/rp_blue"
+                    android:background="@drawable/white_box"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtRedoslijedInfo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="1."
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/rp_blue"
+                    android:background="@drawable/white_box"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnStrijelicaGore"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_arrow_up" />
+                    <ImageButton
+                        android:id="@+id/btnStrijelicaDolje"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_arrow_up"
+                        android:backgroundTint="@color/white"
+                        android:rotation="180"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnUkloniVozacInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_remove_circle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

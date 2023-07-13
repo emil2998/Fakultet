@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.TrenutniPrijevoz"
+    android:background="@color/rp_blue_very_light">
+    <include layout="@layout/main_toolbar"></include>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textVozilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vozilo"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textPrikolica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prikolica"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btnPodnesiKvar"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podnesi kvar"
+            android:layout_marginLeft="10dp"></Button>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="5dp"
+        android:id="@+id/recViewTrenutniPrijevoz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/red_trenutni_prijevoz">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
