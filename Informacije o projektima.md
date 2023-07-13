@@ -11,3 +11,5 @@ WEBprojekt - Razvoj jednostavne web stranice plesne škole koristeći HTML,CSS,J
 emihalic-projekt - Razvoj RESTful/JAX-WS servisa i jednostavnih pogleda na podatke koristeći Eclipse s Maven, Java , Payara , Docker , SOAPUI itd.
 
 r20 - Razvoj jednostavne desktop aplikacije korištenjem Visual Studio, C#, MySQL uz verzioniranje preko githuba.
+
+Završni rad - Završni rad za preddiplomski studij čiji je tema "Izrada igre preživljavanja u alatu unreal".
