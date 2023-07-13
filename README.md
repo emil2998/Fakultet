@@ -7,6 +7,8 @@ Ovdje se nalaze neki od projekata koje sam radio u sklopu fakulteta za kolegije.
 
 # Kratki opis projekata
 
+Programski kod i klase za igricu koja je napravljena za završni rad.
+
 AIR2116 - Razvoj mobilne aplikacije u Android studiju koristeći Kotlin programski jezik te koristeći agilne pristupe uz korištenje JIRE i Confluence alata uz verzioniranje preko githuba.
 
 WEBprojekt - Razvoj jednostavne web stranice plesne škole koristeći HTML,CSS,Javascript i PHP.
