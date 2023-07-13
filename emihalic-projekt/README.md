@@ -21,10 +21,10 @@ Oznaka | Kratki opis
 3.aplikacija |  Preuzima podatke o polascima aviona s izabranih aerodroma
 4.aplikacija | AX-WS web servis, WebSocket krajnja točka
 5.aplikacija | Pogledi za rad s: 
-                                  -korisnicima 
-                                  -primljenim JMS porukama
-                                  -aerodromima
-                                  -letovima
+             |                    -korisnicima 
+               |                     -primljenim JMS porukama
+                 |                   -aerodromima
+                 |                   -letovima
 
 ## Tehnologije i oprema
 
