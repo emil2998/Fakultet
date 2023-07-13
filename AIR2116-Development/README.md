@@ -19,4 +19,4 @@ Cilj projekta je bio kreirati mobilnu aplikaciju za poduzeće romić-promet d.o.
 
 ## Tehnologije i oprema
 
-Koristili su se Android Studio, Kotlin te Google Maps.
+Koristili su se Android Studio, Kotlin, Firebase, GitKraken.
