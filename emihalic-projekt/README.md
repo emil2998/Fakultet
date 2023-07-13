@@ -20,11 +20,7 @@ Oznaka | Kratki opis
 2.aplikacija |  RESTful/JAX-RS web servis
 3.aplikacija |  Preuzima podatke o polascima aviona s izabranih aerodroma
 4.aplikacija | AX-WS web servis, WebSocket krajnja točka
-5.aplikacija | Pogledi za rad s: 
-             |                    -korisnicima 
-               |                     -primljenim JMS porukama
-                 |                   -aerodromima
-                 |                   -letovima
+5.aplikacija | Pogledi za rad s: korisnicima, primljenim JMS porukama, aerodromima, letovima
 
 ## Tehnologije i oprema
 
