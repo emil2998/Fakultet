@@ -25,4 +25,4 @@ Djelomično realizirano |5.aplikacija | Pogledi za rad s: korisnicima, primljeni
 Realizirano otprilike 40% projekta.
 ## Tehnologije i oprema
 
-Koristili su se Eclipse s Maven, Java, Payara full i web, Docker tehnologija, HLSQL baza podataka.
+Koristili su se Eclipse s Maven, Java, Payara full i web, Docker tehnologija, HSQLDB baza podataka.
