@@ -13,7 +13,7 @@ Emil Mihalić  | emihalic@foi.hr     | 0016132200 | emihalic
 Ovaj projekt je aktivnost za kolegij Napredne web tehnologije i servisi te se njegove upute nalaze datoteci NWTiS_2022_2023_v1.0.pdf.
 Dijelovi koji su realizirani se mogu vidjeti u dokumentu emihalic_Obrazac_2.pdf
 
-
+## Kratki opis što se očekivalo u projektu u svakoj aplikaciji
 Oznaka | Kratki opis
 ------------ | ----------- 
 1.aplikacija | -Poslužitelj na mrežnoj utičnici (socket server)
