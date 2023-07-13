@@ -28,6 +28,18 @@ WebSocket krajnja točka
 -letovima
 
 
+
+
+Oznaka | Naziv | Kratki opis
+------------ | ----- | ----------- 
+1.aplikacija | Registracija i login | Za pristup aplikaciji korisnik se prijavljuje sa podatcima koje odabire prilikom registracije u aplikaciji(stranici) 
+1.aplikacija | Pretraživanje filmova i prikaz njihovih informacija | Korisnici mogu pretraživati filmove po raznim filterima te mogu pogledati sve informacije o filmu. 
+1.aplikacija | Pretraživanje kina i rasporeda | Korisnik može pretraživati kina te rasporede izvođenja filmova u tim kinima 
+1.aplikacija | Korisnički kalendar | Vizualni prikaz povijesti obavljenih transakcija i popis pogledanih ili rezerviranih filmova korisnika 
+1.aplikacija | Rezervacija ulaznice uz grafički prikaz dvorane | Nakon odabranog filma korisnici mogu po želji odabrati slobodno sjedalo u dvorani za taj termin prikazivanja filma te mogu rezervirati ulaznicu.
+
+
+
 ## Tehnologije i oprema
 
 Koristili su se Eclipse s Maven, Java, Payara full i web, Dockeri itd.
