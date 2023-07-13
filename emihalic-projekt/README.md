@@ -14,13 +14,13 @@ Ovaj projekt je aktivnost za kolegij Napredne web tehnologije i servisi te se nj
 Dijelovi koji su realizirani se mogu vidjeti u dokumentu emihalic_Obrazac_2.pdf
 
 ## Kratki opis što se očekivalo u projektu u svakoj aplikaciji
-Oznaka | Kratki opis
------------- | ----------- 
-1.aplikacija | -Poslužitelj na mrežnoj utičnici (socket server)
-2.aplikacija |  RESTful/JAX-RS web servis
-3.aplikacija |  Preuzima podatke o polascima aviona s izabranih aerodroma
-4.aplikacija | AX-WS web servis, WebSocket krajnja točka
-5.aplikacija | Pogledi za rad s: korisnicima, primljenim JMS porukama, aerodromima, letovima
+Oznaka | Oznaka | Kratki opis
+------------ |------------ | ----------- 
+1.aplikacija |1.aplikacija | -Poslužitelj na mrežnoj utičnici (socket server)
+1.aplikacija |2.aplikacija |  RESTful/JAX-RS web servis
+1.aplikacija |3.aplikacija |  Preuzima podatke o polascima aviona s izabranih aerodroma
+1.aplikacija |4.aplikacija | AX-WS web servis, WebSocket krajnja točka
+1.aplikacija |5.aplikacija | Pogledi za rad s: korisnicima, primljenim JMS porukama, aerodromima, letovima
 
 ## Tehnologije i oprema
 
